@@ -1,8 +1,8 @@
 from flask import Flask
 from extension import db
-from app.config import Config
-from app.api.routes import api_bp
-from app.expense_bp.routes import expense_bp
+from config import Config
+
+
 
 
 
