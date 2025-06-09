@@ -9,6 +9,7 @@ def kenya_time():
     return datetime.now(KENYA_TIMEZONE)
 
 class Expense(UserMixin,db.Model):
+    __tablename__ = 'expense'
     id = db.Column(db.Integer, primary_key=True)
     amount = db.Column(db.Float(precision=2), nullable=False)
     note = db.Column(db.String(255))
